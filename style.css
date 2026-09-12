@@ -1,0 +1,1973 @@
+:root {
+  /* Design tokens para la UI exportada desde Figma */
+  --bg-primary: #0d1117;
+  --bg-primary-80: #0d111799;
+  --bg-shell: #121a14;
+  --bg-panel: #1a3a22;
+  --bg-panel-alt: #0f2215;
+  --bg-card-blue: #0c1a2e;
+  --bg-card-orange: #1f1308;
+  --bg-card-violet: #160d22;
+  --border-default: #1a2235;
+  --border-subtle: #1e2e20;
+  --border-strong: #3fb95030;
+  --accent-green: #3fb950;
+  --accent-green-soft: #3fb95040;
+  --accent-green-ghost: #3fb95018;
+  --accent-blue: #58a6ff;
+  --accent-blue-soft: #58a6ff18;
+  --accent-orange: #ffa657;
+  --accent-violet: #d2a8ff;
+  --text-primary: #e6edf3;
+  --text-muted: #7d8590;
+  --text-soft: #8d9db0;
+  --text-success: #4a7a52;
+  --font-sans: "Inter-Regular", Helvetica;
+  --font-sans-medium: "Inter-Medium", Helvetica;
+  --font-sans-semibold: "Inter-SemiBold", Helvetica;
+  --font-mono: "JetBrains Mono-Regular", Helvetica;
+  --font-mono-bold: "JetBrains Mono-Bold", Helvetica;
+}
+ 
+/* ===========================
+   BASE / RESET
+   =========================== */
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 1159.2px;
+  align-items: flex-start;
+  position: relative;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+ 
+.app * {
+  box-sizing: border-box;
+}
+ 
+/* ===========================
+   HEADER
+   =========================== */
+.app .header {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  width: 100%;
+  background-color: var(--bg-primary-80);
+  border-bottom: 0.8px solid var(--border-default);
+}
+ 
+/* ===========================
+   ICONOS Y LOGO
+   =========================== */
+.app .container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+.app .icon-wrapper {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-panel);
+  border-radius: 4px;
+  border: 0.8px solid var(--accent-green-soft);
+}
+ 
+.app .icon {
+  width: 14px;
+  height: 14px;
+  background-image: url(./img/vector-3.svg);
+  background-size: cover;
+}
+ 
+.app .text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ 
+.app .windcode-explory {
+  font-family: var(--font-mono-bold);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: transparent;
+  margin-top: -1px;
+}
+ 
+.app .text-wrapper {
+  color: var(--accent-green);
+}
+ 
+.app .span {
+  color: var(--text-primary);
+}
+
+/* ===========================
+   NAVEGACIÓN
+   =========================== */
+.app .navigation {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.app .button {
+  all: unset;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  background-color: #1a3a22;
+  border-radius: 6px;
+  border: 0.8px solid #3fb95030;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .div {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--accent-green);
+  text-align: center;
+}
+
+.app .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 0.8px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .text-wrapper-2 {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-gray);
+  text-align: center;
+}
+
+/* ===========================
+   CONTENEDORES
+   =========================== */
+.app .container-2 {
+  width: 100%;
+  height: 1051.75px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(63, 185, 80, 0.08) 0%,
+    rgba(0, 0, 0, 0) 0%
+  );
+}
+
+.app .container-3 {
+  display: flex;
+  flex-direction: column;
+  width: 1159px;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app .div-wrapper-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.app .container-4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: #121a14;
+  border-radius: 50px;
+  border: 0.8px solid #1e2e20;
+}
+
+.app .text-2 {
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent-green);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+/* ===========================
+   TIPOGRAFÍA Y TEXTOS
+   =========================== */
+.app .p {
+  font-family: "JetBrains Mono-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+  color: #4a7a52;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ===========================
+   HEADING PRINCIPAL
+   =========================== */
+.app .heading {
+  display: flex;
+  flex-direction: column;
+  width: 659px;
+  height: 96px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.app .windcode-explory-2 {
+  font-family: var(--font-mono-bold);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 75.6px;
+  letter-spacing: -2.16px;
+  text-align: center;
+  color: transparent;
+  margin-top: -1px;
+}
+
+/* Colores aplicados al título */
+.app .text-wrapper-3 { color: var(--accent-green); letter-spacing: -1.56px; }
+.app .text-wrapper-4 { color: var(--text-light); letter-spacing: -1.56px; }
+.app .text-wrapper-5 { color: #58a6ff; letter-spacing: -1.56px; }
+
+/* Subtítulo */
+.app .text-wrapper-6 {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 18.4px;
+  line-height: 29.4px;
+  color: #8d9db0;
+  text-align: center;
+  margin-top: -1px;
+}
+
+/* ===========================
+   BOTONES DE ACCIÓN
+   =========================== */
+.app .container-5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Botón primario */
+.app .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  min-width: 160px;
+  padding: 12px 28px;
+  background-color: var(--accent-green);
+  border-radius: 8px;
+  border: 0.8px solid var(--accent-green);
+  box-shadow: 0 0 20px #3fb95066;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .text-wrapper-7 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #071008;
+  text-align: center;
+}
+
+/* Botón secundario */
+.app .button-3 {
+  all: unset;
+  box-sizing: border-box;
+  min-width: 160px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 0.8px solid #2a3a4e;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .text-wrapper-8 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #a0b0c4;
+  text-align: center;
+}
+
+/* ===========================
+   CONTENEDOR WRAPPER
+   =========================== */
+.app .container-wrapper {
+  display: flex;
+  width: 1159px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 24px 32px;
+  position: absolute;
+  top: 381px;
+  left: 1px;
+}
+
+
+.app .container-6 {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  width: 768px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.app .room-illustration-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 483px;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #0d1117;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 0.8px solid;
+  border-color: #1a2235;
+}
+
+.app .room-illustration {
+  position: relative;
+  max-width: 768px;
+  width: 100%;
+  height: 481.73px;
+}
+
+.app .vector {
+  position: absolute;
+  width: 100.00%;
+  height: 22.73%;
+  top: 77.27%;
+  left: 0;
+}
+
+.app .img {
+  position: absolute;
+  width: 94.28%;
+  height: 93.18%;
+  top: 6.82%;
+  left: 5.72%;
+}
+
+.app .vector-2 {
+  position: absolute;
+  width: 100.00%;
+  height: 93.18%;
+  top: 6.82%;
+  left: 0;
+}
+
+.app .vector-3 {
+  position: absolute;
+  width: 94.28%;
+  height: 22.39%;
+  top: 77.61%;
+  left: 5.72%;
+}
+
+.app .vector-4 {
+  position: absolute;
+  width: 94.28%;
+  height: 25.45%;
+  top: 74.55%;
+  left: 5.72%;
+}
+
+.app .vector-5 {
+  position: absolute;
+  width: 68.71%;
+  height: 87.73%;
+  top: 12.27%;
+  left: 31.29%;
+}
+
+.app .vector-6 {
+  position: absolute;
+  width: 68.29%;
+  height: 87.05%;
+  top: 12.95%;
+  left: 31.71%;
+}
+
+.app .vector-7 {
+  position: absolute;
+  width: 57.29%;
+  height: 87.05%;
+  top: 12.95%;
+  left: 42.71%;
+}
+
+.app .vector-8 {
+  position: absolute;
+  width: 68.29%;
+  height: 73.64%;
+  top: 26.36%;
+  left: 31.71%;
+}
+
+.app .vector-9 {
+  position: absolute;
+  width: 68.14%;
+  height: 86.82%;
+  top: 13.18%;
+  left: 31.86%;
+}
+
+.app .vector-10 {
+  position: absolute;
+  width: 57.00%;
+  height: 86.82%;
+  top: 13.18%;
+  left: 43.00%;
+}
+
+.app .vector-11 {
+  position: absolute;
+  width: 68.14%;
+  height: 73.18%;
+  top: 26.82%;
+  left: 31.86%;
+}
+
+.app .vector-12 {
+  position: absolute;
+  width: 57.00%;
+  height: 73.18%;
+  top: 26.82%;
+  left: 43.00%;
+}
+
+.app .vector-13 {
+  position: absolute;
+  width: 65.86%;
+  height: 83.86%;
+  top: 16.14%;
+  left: 34.14%;
+}
+
+.app .vector-14 {
+  position: absolute;
+  width: 62.29%;
+  height: 80.91%;
+  top: 19.09%;
+  left: 37.71%;
+}
+
+.app .vector-15 {
+  position: absolute;
+  width: 52.29%;
+  height: 85.45%;
+  top: 14.55%;
+  left: 47.71%;
+}
+
+.app .vector-16 {
+  position: absolute;
+  width: 49.00%;
+  height: 79.77%;
+  top: 20.23%;
+  left: 51.00%;
+}
+
+.app .vector-17 {
+  position: absolute;
+  width: 55.86%;
+  height: 82.50%;
+  top: 17.50%;
+  left: 44.14%;
+}
+
+.app .vector-18 {
+  position: absolute;
+  width: 64.71%;
+  height: 77.50%;
+  top: 22.50%;
+  left: 35.29%;
+}
+
+.app .vector-19 {
+  position: absolute;
+  width: 47.29%;
+  height: 76.36%;
+  top: 23.64%;
+  left: 52.71%;
+}
+
+.app .vector-20 {
+  position: absolute;
+  width: 53.00%;
+  height: 70.68%;
+  top: 29.32%;
+  left: 47.00%;
+}
+
+.app .vector-21 {
+  position: absolute;
+  width: 63.71%;
+  height: 69.55%;
+  top: 30.45%;
+  left: 36.29%;
+}
+
+.app .vector-22 {
+  position: absolute;
+  width: 50.71%;
+  height: 84.55%;
+  top: 15.45%;
+  left: 49.29%;
+}
+
+.app .vector-23 {
+  position: absolute;
+  width: 50.00%;
+  height: 85.45%;
+  top: 14.55%;
+  left: 50.00%;
+}
+
+.app .vector-24 {
+  position: absolute;
+  width: 69.50%;
+  height: 88.98%;
+  top: 11.02%;
+  left: 30.50%;
+}
+
+.app .vector-25 {
+  position: absolute;
+  width: 70.00%;
+  height: 59.55%;
+  top: 40.45%;
+  left: 30.00%;
+}
+
+.app .vector-26 {
+  position: absolute;
+  width: 92.21%;
+  height: 75.11%;
+  top: 24.89%;
+  left: 7.79%;
+}
+
+.app .vector-27 {
+  position: absolute;
+  width: 92.14%;
+  height: 75.00%;
+  top: 25.00%;
+  left: 7.86%;
+}
+
+.app .vector-28 {
+  position: absolute;
+  width: 92.14%;
+  height: 60.91%;
+  top: 39.09%;
+  left: 7.86%;
+}
+
+.app .vector-29 {
+  position: absolute;
+  width: 92.14%;
+  height: 47.73%;
+  top: 52.27%;
+  left: 7.86%;
+}
+
+.app .vector-30 {
+  position: absolute;
+  width: 92.14%;
+  height: 34.55%;
+  top: 65.45%;
+  left: 7.86%;
+}
+
+.app .vector-31 {
+  position: absolute;
+  width: 91.57%;
+  height: 73.41%;
+  top: 26.59%;
+  left: 8.43%;
+}
+
+.app .vector-32 {
+  position: absolute;
+  width: 89.86%;
+  height: 71.82%;
+  top: 28.18%;
+  left: 10.14%;
+}
+
+.app .vector-33 {
+  position: absolute;
+  width: 88.43%;
+  height: 74.09%;
+  top: 25.91%;
+  left: 11.57%;
+}
+
+.app .vector-34 {
+  position: absolute;
+  width: 86.57%;
+  height: 72.27%;
+  top: 27.73%;
+  left: 13.43%;
+}
+
+.app .vector-35 {
+  position: absolute;
+  width: 85.00%;
+  height: 72.95%;
+  top: 27.05%;
+  left: 15.00%;
+}
+
+.app .vector-36 {
+  position: absolute;
+  width: 83.57%;
+  height: 71.36%;
+  top: 28.64%;
+  left: 16.43%;
+}
+
+.app .vector-37 {
+  position: absolute;
+  width: 91.57%;
+  height: 57.73%;
+  top: 42.27%;
+  left: 8.43%;
+}
+
+.app .vector-38 {
+  position: absolute;
+  width: 90.00%;
+  height: 59.55%;
+  top: 40.45%;
+  left: 10.00%;
+}
+
+.app .vector-39 {
+  position: absolute;
+  width: 88.14%;
+  height: 58.18%;
+  top: 41.82%;
+  left: 11.86%;
+}
+
+.app .vector-40 {
+  position: absolute;
+  width: 86.71%;
+  height: 59.09%;
+  top: 40.91%;
+  left: 13.29%;
+}
+
+.app .vector-41 {
+  position: absolute;
+  width: 85.00%;
+  height: 57.50%;
+  top: 42.50%;
+  left: 15.00%;
+}
+
+.app .vector-42 {
+  position: absolute;
+  width: 83.43%;
+  height: 58.64%;
+  top: 41.36%;
+  left: 16.57%;
+}
+
+.app .vector-43 {
+  position: absolute;
+  width: 85.71%;
+  height: 42.05%;
+  top: 57.95%;
+  left: 14.29%;
+}
+
+.app .vector-44 {
+  position: absolute;
+  width: 85.71%;
+  height: 38.86%;
+  top: 61.14%;
+  left: 14.29%;
+}
+
+.app .vector-45 {
+  position: absolute;
+  width: 84.00%;
+  height: 37.95%;
+  top: 62.05%;
+  left: 16.00%;
+}
+
+.app .vector-46 {
+  position: absolute;
+  width: 21.14%;
+  height: 37.95%;
+  top: 62.05%;
+  left: 78.86%;
+}
+
+.app .vector-47 {
+  position: absolute;
+  width: 82.86%;
+  height: 27.73%;
+  top: 72.27%;
+  left: 17.14%;
+}
+
+.app .vector-48 {
+  position: absolute;
+  width: 56.43%;
+  height: 43.64%;
+  top: 56.36%;
+  left: 43.57%;
+}
+
+.app .vector-49 {
+  position: absolute;
+  width: 58.29%;
+  height: 41.59%;
+  top: 58.41%;
+  left: 41.71%;
+}
+
+.app .vector-50 {
+  position: absolute;
+  width: 55.43%;
+  height: 50.00%;
+  top: 50.00%;
+  left: 44.57%;
+}
+
+.app .vector-51 {
+  position: absolute;
+  width: 67.29%;
+  height: 68.41%;
+  top: 31.59%;
+  left: 32.71%;
+}
+
+.app .vector-52 {
+  position: absolute;
+  width: 66.57%;
+  height: 67.27%;
+  top: 32.73%;
+  left: 33.43%;
+}
+
+.app .c-users-admin {
+  width: 13.83%;
+  top: 35.23%;
+  font-size: 7.7px;
+  white-space: nowrap;
+  position: absolute;
+  height: 0;
+  left: 34.29%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .text-wrapper-9 {
+  position: absolute;
+  width: 10.57%;
+  height: 0;
+  top: 37.95%;
+  left: 34.29%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 6.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .text-wrapper-10 {
+  position: absolute;
+  width: 13.44%;
+  height: 0;
+  top: 40.23%;
+  left: 34.29%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 6.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .text-wrapper-11 {
+  position: absolute;
+  width: 12.53%;
+  height: 0;
+  top: 42.50%;
+  left: 34.29%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 6.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .text-wrapper-12 {
+  position: absolute;
+  width: 13.31%;
+  height: 0;
+  top: 44.77%;
+  left: 34.29%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 6.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .text-wrapper-13 {
+  position: absolute;
+  width: 12.13%;
+  height: 0;
+  top: 47.05%;
+  left: 34.29%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 6.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .c-users-admin-2 {
+  width: 8.09%;
+  top: 49.32%;
+  font-size: 6.6px;
+  position: absolute;
+  height: 0;
+  left: 34.29%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .vector-53 {
+  position: absolute;
+  width: 66.57%;
+  height: 43.64%;
+  top: 56.36%;
+  left: 33.43%;
+}
+
+.app .vector-54 {
+  position: absolute;
+  width: 65.71%;
+  height: 43.18%;
+  top: 56.82%;
+  left: 34.29%;
+}
+
+.app .text-wrapper-14 {
+  position: absolute;
+  width: 7.44%;
+  height: 0;
+  top: 56.82%;
+  left: 35.43%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 5.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .vector-55 {
+  position: absolute;
+  width: 53.07%;
+  height: 66.25%;
+  top: 33.75%;
+  left: 46.93%;
+}
+
+.app .vector-56 {
+  position: absolute;
+  width: 68.64%;
+  height: 41.02%;
+  top: 58.98%;
+  left: 31.36%;
+}
+
+.app .vector-57 {
+  position: absolute;
+  width: 67.86%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 32.14%;
+}
+
+.app .vector-58 {
+  position: absolute;
+  width: 65.71%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 34.29%;
+}
+
+.app .vector-59 {
+  position: absolute;
+  width: 63.57%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 36.43%;
+}
+
+.app .vector-60 {
+  position: absolute;
+  width: 61.43%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 38.57%;
+}
+
+.app .vector-61 {
+  position: absolute;
+  width: 59.29%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 40.71%;
+}
+
+.app .vector-62 {
+  position: absolute;
+  width: 57.14%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 42.86%;
+}
+
+.app .vector-63 {
+  position: absolute;
+  width: 55.00%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 45.00%;
+}
+
+.app .vector-64 {
+  position: absolute;
+  width: 52.86%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 47.14%;
+}
+
+.app .vector-65 {
+  position: absolute;
+  width: 50.71%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 49.29%;
+}
+
+.app .vector-66 {
+  position: absolute;
+  width: 48.57%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 51.43%;
+}
+
+.app .vector-67 {
+  position: absolute;
+  width: 46.43%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 53.57%;
+}
+
+.app .vector-68 {
+  position: absolute;
+  width: 44.29%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 55.71%;
+}
+
+.app .vector-69 {
+  position: absolute;
+  width: 42.14%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 57.86%;
+}
+
+.app .vector-70 {
+  position: absolute;
+  width: 67.43%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 32.57%;
+}
+
+.app .vector-71 {
+  position: absolute;
+  width: 65.29%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 34.71%;
+}
+
+.app .vector-72 {
+  position: absolute;
+  width: 63.14%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 36.86%;
+}
+
+.app .vector-73 {
+  position: absolute;
+  width: 61.00%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 39.00%;
+}
+
+.app .vector-74 {
+  position: absolute;
+  width: 58.86%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 41.14%;
+}
+
+.app .vector-75 {
+  position: absolute;
+  width: 56.71%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 43.29%;
+}
+
+.app .vector-76 {
+  position: absolute;
+  width: 54.57%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 45.43%;
+}
+
+.app .vector-77 {
+  position: absolute;
+  width: 52.43%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 47.57%;
+}
+
+.app .vector-78 {
+  position: absolute;
+  width: 50.29%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 49.71%;
+}
+
+.app .vector-79 {
+  position: absolute;
+  width: 48.14%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 51.86%;
+}
+
+.app .vector-80 {
+  position: absolute;
+  width: 46.00%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 54.00%;
+}
+
+.app .vector-81 {
+  position: absolute;
+  width: 43.86%;
+  height: 37.73%;
+  top: 62.27%;
+  left: 56.14%;
+}
+
+.app .vector-82 {
+  position: absolute;
+  width: 36.50%;
+  height: 41.48%;
+  top: 58.52%;
+  left: 63.50%;
+}
+
+.app .vector-83 {
+  position: absolute;
+  width: 34.50%;
+  height: 41.36%;
+  top: 58.64%;
+  left: 65.50%;
+}
+
+.app .vector-84 {
+  position: absolute;
+  width: 34.71%;
+  height: 39.55%;
+  top: 60.45%;
+  left: 65.29%;
+}
+
+.app .vector-85 {
+  position: absolute;
+  width: 77.93%;
+  height: 46.93%;
+  top: 53.07%;
+  left: 22.07%;
+}
+
+.app .vector-86 {
+  position: absolute;
+  width: 73.86%;
+  height: 45.68%;
+  top: 54.32%;
+  left: 26.14%;
+}
+
+.app .vector-87 {
+  position: absolute;
+  width: 76.78%;
+  height: 50.50%;
+  top: 49.50%;
+  left: 23.22%;
+}
+
+.app .vector-88 {
+  position: absolute;
+  width: 75.78%;
+  height: 50.95%;
+  top: 49.05%;
+  left: 24.22%;
+}
+
+.app .vector-89 {
+  position: absolute;
+  width: 77.43%;
+  height: 45.45%;
+  top: 54.55%;
+  left: 22.57%;
+}
+
+.app .text-wrapper-15 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 55.45%;
+  left: 23.00%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 5.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.app .vector-90 {
+  position: absolute;
+  width: 22.93%;
+  height: 46.02%;
+  top: 53.98%;
+  left: 77.07%;
+}
+
+.app .vector-91 {
+  position: absolute;
+  width: 22.29%;
+  height: 45.00%;
+  top: 55.00%;
+  left: 77.71%;
+}
+
+.app .vector-92 {
+  position: absolute;
+  width: 22.29%;
+  height: 43.64%;
+  top: 56.36%;
+  left: 77.71%;
+}
+
+.app .vector-93 {
+  position: absolute;
+  width: 22.29%;
+  height: 42.50%;
+  top: 57.50%;
+  left: 77.71%;
+}
+
+.app .vector-94 {
+  position: absolute;
+  width: 22.29%;
+  height: 41.36%;
+  top: 58.64%;
+  left: 77.71%;
+}
+
+.app .vector-95 {
+  position: absolute;
+  width: 22.29%;
+  height: 40.23%;
+  top: 59.77%;
+  left: 77.71%;
+}
+
+.app .vector-96 {
+  position: absolute;
+  width: 28.71%;
+  height: 57.05%;
+  top: 42.95%;
+  left: 71.29%;
+}
+
+.app .vector-97 {
+  position: absolute;
+  width: 27.86%;
+  height: 55.68%;
+  top: 44.32%;
+  left: 72.14%;
+}
+
+.app .vector-98 {
+  position: absolute;
+  width: 27.25%;
+  height: 61.99%;
+  top: 38.01%;
+  left: 72.75%;
+}
+
+.app .vector-99 {
+  position: absolute;
+  width: 27.86%;
+  height: 42.05%;
+  top: 57.95%;
+  left: 72.14%;
+}
+
+.app .vector-100 {
+  position: absolute;
+  width: 19.29%;
+  height: 42.05%;
+  top: 57.95%;
+  left: 80.71%;
+}
+
+.app .vector-101 {
+  position: absolute;
+  width: 12.86%;
+  height: 36.36%;
+  top: 63.64%;
+  left: 87.14%;
+}
+
+.app .vector-102 {
+  position: absolute;
+  width: 13.29%;
+  height: 37.27%;
+  top: 62.73%;
+  left: 86.71%;
+}
+
+.app .vector-103 {
+  position: absolute;
+  width: 13.29%;
+  height: 35.00%;
+  top: 65.00%;
+  left: 86.71%;
+}
+
+.app .vector-104 {
+  position: absolute;
+  width: 13.29%;
+  height: 51.59%;
+  top: 48.41%;
+  left: 86.71%;
+}
+
+.app .vector-105 {
+  position: absolute;
+  width: 15.43%;
+  height: 46.14%;
+  top: 53.86%;
+  left: 84.57%;
+}
+
+.app .vector-106 {
+  position: absolute;
+  width: 9.72%;
+  height: 46.36%;
+  top: 53.64%;
+  left: 90.28%;
+}
+
+.app .vector-107 {
+  position: absolute;
+  width: 12.14%;
+  height: 50.91%;
+  top: 49.09%;
+  left: 87.86%;
+}
+
+.app .vector-108 {
+  position: absolute;
+  width: 13.14%;
+  height: 45.91%;
+  top: 54.09%;
+  left: 86.86%;
+}
+
+.app .vector-109 {
+  position: absolute;
+  width: 9.86%;
+  height: 46.59%;
+  top: 53.41%;
+  left: 90.14%;
+}
+
+.app .vector-110 {
+  position: absolute;
+  width: 11.52%;
+  height: 45.54%;
+  top: 54.46%;
+  left: 88.48%;
+}
+
+.app .vector-111 {
+  position: absolute;
+  width: 10.25%;
+  height: 45.54%;
+  top: 54.46%;
+  left: 89.75%;
+}
+
+.app .vector-112 {
+  position: absolute;
+  width: 89.28%;
+  height: 32.27%;
+  top: 67.73%;
+  left: 10.72%;
+}
+
+.app .vector-113 {
+  position: absolute;
+  width: 89.71%;
+  height: 33.18%;
+  top: 66.82%;
+  left: 10.29%;
+}
+
+.app .vector-114 {
+  position: absolute;
+  width: 88.14%;
+  height: 40.45%;
+  top: 59.55%;
+  left: 11.86%;
+}
+
+.app .vector-115 {
+  position: absolute;
+  width: 89.71%;
+  height: 38.64%;
+  top: 61.36%;
+  left: 10.29%;
+}
+
+.app .vector-116 {
+  position: absolute;
+  width: 89.71%;
+  height: 40.00%;
+  top: 60.00%;
+  left: 10.29%;
+}
+
+.app .vector-117 {
+  position: absolute;
+  width: 86.43%;
+  height: 37.50%;
+  top: 62.50%;
+  left: 13.57%;
+}
+
+.app .vector-118 {
+  position: absolute;
+  width: 85.43%;
+  height: 39.09%;
+  top: 60.91%;
+  left: 14.57%;
+}
+
+.app .vector-119 {
+  position: absolute;
+  width: 88.03%;
+  height: 40.08%;
+  top: 59.92%;
+  left: 11.97%;
+}
+
+.app .vector-120 {
+  position: absolute;
+  width: 86.75%;
+  height: 40.08%;
+  top: 59.92%;
+  left: 13.25%;
+}
+
+.app .vector-121 {
+  position: absolute;
+  width: 88.03%;
+  height: 38.26%;
+  top: 61.74%;
+  left: 11.97%;
+}
+
+.app .vector-122 {
+  position: absolute;
+  width: 86.75%;
+  height: 38.26%;
+  top: 61.74%;
+  left: 13.25%;
+}
+
+.app .vector-123 {
+  position: absolute;
+  width: 88.03%;
+  height: 36.44%;
+  top: 63.56%;
+  left: 11.97%;
+}
+
+.app .vector-124 {
+  position: absolute;
+  width: 86.75%;
+  height: 36.44%;
+  top: 63.56%;
+  left: 13.25%;
+}
+
+.app .vector-125 {
+  position: absolute;
+  width: 74.29%;
+  height: 43.18%;
+  top: 56.82%;
+  left: 25.71%;
+}
+
+.app .vector-126 {
+  position: absolute;
+  width: 78.57%;
+  height: 100%;
+  top: 0;
+  left: 21.43%;
+}
+
+.app .container-7 {
+  position: absolute;
+  top: 417px;
+  left: 606px;
+  width: 138px;
+  height: 42px;
+  background-color: #161d27dd;
+  border-radius: 8px;
+  border: 0.8px solid;
+  border-color: #3fb95030;
+}
+
+.app .c-ipconfig {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  font-family: "JetBrains Mono-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.app .text-wrapper-16 {
+  color: #7ee787;
+}
+
+.app .text-wrapper-17 {
+  position: absolute;
+  top: 13px;
+  left: 115px;
+  font-family: "JetBrains Mono-Regular", Helvetica;
+  font-weight: 400;
+  color: #3fb950;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.app .container-8 {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  width: 768px;
+  align-items: flex-start;
+  padding: 0px 24px 64px;
+  position: absolute;
+  top: 896px;
+  left: 196px;
+}
+
+.app .container-9 {
+  display: grid;
+  grid-template-columns: 171px 171px 171px 171px;
+  grid-template-rows: 91.59px;
+  height: 92px;
+  gap: 12px;
+}
+
+.app .container-10 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: #0f2215;
+  border-radius: 12px;
+  border: 0.8px solid;
+  border-color: #1e4028;
+}
+
+.app .container-11 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.app .text-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #3fb95018;
+  border-radius: 6px;
+}
+
+.app .icon-2 {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background-image: url(./img/vector-7.svg);
+  background-size: 100% 100%;
+}
+
+.app .text-wrapper-18 {
+  color: #3fb950;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JetBrains Mono-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.app .text-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.app .text-wrapper-19 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #8d9db0;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.app .container-12 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: #0c1a2e;
+  border-radius: 12px;
+  border: 0.8px solid;
+  border-color: #1a3050;
+}
+
+.app .text-5 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #58a6ff18;
+  border-radius: 6px;
+}
+
+.app .vector-wrapper {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.app .vector-127 {
+  position: absolute;
+  width: 93.75%;
+  height: 93.75%;
+  top: 6.25%;
+  left: 6.25%;
+}
+
+.app .text-wrapper-20 {
+  color: #58a6ff;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JetBrains Mono-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.app .container-13 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: #1f1308;
+  border-radius: 12px;
+  border: 0.8px solid;
+  border-color: #3a2510;
+}
+
+.app .text-6 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ffa65718;
+  border-radius: 6px;
+}
+
+.app .vector-128 {
+  position: absolute;
+  width: 96.31%;
+  height: 98.44%;
+  top: 0;
+  left: 3.69%;
+}
+
+.app .text-wrapper-21 {
+  color: #ffa657;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JetBrains Mono-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.app .container-14 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: #160d22;
+  border-radius: 12px;
+  border: 0.8px solid;
+  border-color: #2e1a44;
+}
+
+.app .text-7 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #d2a8ff18;
+  border-radius: 6px;
+}
+
+.app .icon-3 {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background-image: url(./img/vector-118.svg);
+  background-size: 100% 100%;
+}
+
+.app .text-wrapper-22 {
+  color: #d2a8ff;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JetBrains Mono-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+/* Inject after the original generated CSS. */
+
+.app {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.app .header,
+.app .container-2 {
+  min-width: 0;
+}
+
+.app button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.app button:focus-visible {
+  outline: 2px solid #58a6ff !important;
+  outline-offset: 3px;
+}
+
+.app .container-3,
+.app .container-wrapper {
+  width: 100%;
+  max-width: 1159px;
+}
+
+.app .container-6 {
+  width: min(768px, 100%);
+}
+
+.app .container-8 {
+  width: min(768px, 100%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.app .container-9 {
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.app .container-10,
+.app .container-12,
+.app .container-13,
+.app .container-14 {
+  min-width: 0;
+}
+
+.app .windcode-explory-2,
+.app .windcode-explory,
+.app .p,
+.app .text-wrapper-6,
+.app .c-ipconfig {
+  margin-bottom: 0;
+}
+
+@media (max-width: 780px) {
+  .app .header {
+    height: auto;
+    min-height: 56px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+
+  .app .navigation {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .app .container-2 {
+    height: auto;
+    min-height: 1051.75px;
+  }
+
+  .app .container-3 {
+    padding: 48px 16px 32px;
+  }
+
+  .app .heading {
+    width: 100%;
+    height: auto;
+  }
+
+  .app .windcode-explory-2 {
+    font-size: clamp(40px, 11vw, 72px);
+    line-height: 1.1;
+    white-space: normal;
+  }
+
+  .app .text-wrapper-6 {
+    white-space: normal;
+  }
+
+  .app .container-wrapper {
+    top: 330px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .app .room-illustration-wrapper {
+    height: auto;
+    aspect-ratio: 768 / 483;
+  }
+
+  .app .room-illustration {
+    height: auto;
+    aspect-ratio: 768 / 481.73;
+  }
+
+  .app .container-7 {
+    left: auto;
+    right: 5%;
+  }
+
+  .app .container-8 {
+    top: auto;
+    bottom: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .app .container-9 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 91.59px);
+  }
+
+  .app .container-10,
+  .app .container-12,
+  .app .container-13,
+  .app .container-14 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .app .container-5 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app .button-2,
+  .app .button-3 {
+    width: 100%;
+  }
+
+  .app .container-wrapper {
+    top: 370px;
+  }
+
+  .app .container-8 {
+    position: relative;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    transform: none;
+    margin: 420px auto 0;
+  }
+
+  .app .container-9 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 91.59px);
+  }
+}

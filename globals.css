@@ -1,0 +1,78 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/* Tokens globales compartidos por la interfaz exportada desde Figma. */
+:root {
+  --color-background: #0d1117;
+  --color-text: #e6edf3;
+  --color-focus: #4a90e2;
+  --font-sans: "Inter-Regular", Helvetica, Arial, sans-serif;
+  --font-sans-medium: "Inter-Medium", Helvetica, Arial, sans-serif;
+  --font-sans-semibold: "Inter-SemiBold", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono-Regular", "Courier New", monospace;
+  --font-mono-bold: "JetBrains Mono-Bold", "Courier New", monospace;
+}
+
+/* Base mínima: evita estilos implícitos inconsistentes entre navegadores. */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+/* @FONTWARNING[{"type": "restricted", "family": "JetBrains Mono-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "JetBrains Mono-Bold";
+  src: local("JetBrains Mono-Bold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "JetBrains Mono-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "JetBrains Mono-Regular";
+  src: local("JetBrains Mono-Regular");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: local("Inter-SemiBold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: local("Inter-Medium");
+}

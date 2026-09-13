@@ -364,6 +364,7 @@
   height: 481.73px;
 }
 
+/* Capas vectoriales que construyen la escena ilustrada del espacio de trabajo. */
 .app .vector {
   position: absolute;
   width: 100.00%;
@@ -788,6 +789,7 @@
   left: 33.43%;
 }
 
+/* Texto superpuesto que simula la salida de ipconfig en la consola. */
 .app .c-users-admin {
   width: 13.83%;
   top: 35.23%;
@@ -1507,6 +1509,7 @@
   left: 21.43%;
 }
 
+/* Etiqueta flotante con el comando mostrado sobre la ilustración. */
 .app .container-7 {
   position: absolute;
   top: 417px;
@@ -1549,6 +1552,7 @@
   white-space: nowrap;
 }
 
+/* Panel de métricas resumidas de la aplicación. */
 .app .container-8 {
   display: flex;
   flex-direction: column;
@@ -1803,7 +1807,8 @@
   line-height: 30px;
   white-space: nowrap;
 }
-/* Inject after the original generated CSS. */
+
+/* Ajustes posteriores para fluidez, accesibilidad y adaptación del layout. */
 
 .app {
   width: 100%;
@@ -1863,6 +1868,7 @@
 }
 
 @media (max-width: 780px) {
+  /* Reorganiza header, ilustración y métricas en pantallas medianas. */
   .app .header {
     height: auto;
     min-height: 56px;
@@ -1943,6 +1949,7 @@
 }
 
 @media (max-width: 460px) {
+  /* Apila acciones y tarjetas para pantallas pequeñas. */
   .app .container-5 {
     flex-direction: column;
     width: 100%;

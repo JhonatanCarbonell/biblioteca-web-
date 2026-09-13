@@ -1,4 +1,6 @@
+//Importamos el framework Express
 const express = require('express');
+//Creamos la aplicación
 const app = express();
 const PORT = 3000;
 
